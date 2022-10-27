@@ -9,6 +9,8 @@ from models.review import Review
 import models
 from os import getenv
 
+#Update Place: (models/place.py)
+
 place_amenity = Table(
     'place_amenity', Base.metadata,
     Column(
