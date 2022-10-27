@@ -6,6 +6,7 @@ from sqlalchemy.orm.scoping import scoped_session
 from sqlalchemy.schema import MetaData
 from sqlalchemy.orm import sessionmaker
 
+#New engine DBStorage: (models/engine/db_storage.py)
 
 username = getenv('HBNB_MYSQL_USER')
 password = getenv('HBNB_MYSQL_PWD')
