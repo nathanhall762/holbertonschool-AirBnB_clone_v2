@@ -4,6 +4,7 @@ from sqlalchemy.orm import relationship
 from models.base_model import Base, BaseModel
 from sqlalchemy import Column, String, ForeignKey
 
+#Update Amenity: (models/amenity.py)
 
 class Amenity(BaseModel, Base):
     """
