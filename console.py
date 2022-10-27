@@ -11,7 +11,8 @@ from models.city import City
 from models.amenity import Amenity
 from models.review import Review
 
-
+    #Update the def do_create(self, arg): function of your command interpreter
+    #(console.py) to allow for object creation with given parameters
 class HBNBCommand(cmd.Cmd):
     """ Contains the functionality for the HBNB console"""
 
