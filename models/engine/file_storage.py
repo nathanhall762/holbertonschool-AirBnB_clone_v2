@@ -6,6 +6,8 @@ from sqlalchemy.orm.scoping import scoped_session
 from sqlalchemy.schema import MetaData
 from sqlalchemy.orm import sessionmaker
 
+#Add a new public instance method: def delete(self, obj=None): to delete obj from __objects if it’s inside - if obj is equal to None, the method should not do anything
+#Update the prototype of def all(self) to def all(self, cls=None) - that returns the list of objects of one type of class. Example below with State - it’s an optional filtering
 
 username = getenv('HBNB_MYSQL_USER')
 password = getenv('HBNB_MYSQL_PWD')
