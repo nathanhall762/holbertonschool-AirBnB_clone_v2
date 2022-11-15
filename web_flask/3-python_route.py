@@ -26,10 +26,8 @@ def c(text):
 
 @flask_app.route('/python/')
 @flask_app.route('/python/<text>', strict_slashes=False)
-def python(text):
+def python(text="is cool"):
     """documentation"""
-    if not text:
-        return 'Python is cool'
     return 'Python' + text.replace('_', ' ')
 
 
