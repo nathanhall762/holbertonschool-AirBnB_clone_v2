@@ -1,18 +1,16 @@
 #!/usr/bin/python3
-"""Starts a Flask web application
-"""
+"""documentation"""
 from flask import Flask
 
 
-app = Flask(__name__)
+flask_app = (__name__)
 
 
-@app.route('/', strict_slashes=False)
+@flask_app.route('/', strict_slashes=False)
 def index():
-    """Display 'Hello HBNB!'
-    """
+    """documentation"""
     return 'Hello HBNB!'
 
 
 if __name__ == '__main__':
-    app.run('0.0.0.0')
+    flask_app.run('0.0.0.0')
