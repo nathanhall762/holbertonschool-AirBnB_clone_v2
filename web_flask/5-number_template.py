@@ -27,13 +27,13 @@ if __name__ == '__main__':
         """documentation"""
         return 'Python' + text.replace('_', ' ')
 
-    @flask_app.route('/number/<n>')
+    @flask_app.route('/number/<n>', strict_slashes=False)
     def number(n):
         """documentation"""
         return str(n) + 'is a number'
 
-    @flask_app.route('/number_template/<n>')
-    def number_template(n):
+    @flask_app.route('/number_template/<int:n>', strict_slashes=False)
+    def number_template(n=None):
         """documentation"""
         if isinstance(n, int):
             return render_template("5-number.html", n=n)
