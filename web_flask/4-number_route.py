@@ -27,7 +27,7 @@ if __name__ == '__main__':
         """documentation"""
         return 'Python' + text.replace('_', ' ')
 
-    @flask_app.route('/number/<n>')
+    @flask_app.route('/number/<n>', strict_slashes=False)
     def number(n):
         """documentation"""
         return str(n) + 'is a number'
