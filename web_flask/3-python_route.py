@@ -24,6 +24,7 @@ def c(text):
     return 'C' + text.replace('_', ' ')
 
 
+@flask_app.route('/python/')
 @flask_app.route('/python/<text>', strict_slashes=False)
 def python(text):
     """documentation"""
