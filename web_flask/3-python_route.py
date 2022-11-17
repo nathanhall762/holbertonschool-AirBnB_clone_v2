@@ -19,12 +19,12 @@ if __name__ == '__main__':
     @flask_app.route('/c/<text>', strict_slashes=False)
     def c(text):
         """documentation"""
-        return 'C' + text.replace('_', ' ')
+        return "C {}".format(text.replace("_", " "))
 
     @flask_app.route('/python/')
     @flask_app.route('/python/<text>', strict_slashes=False)
     def python(text="is cool"):
         """documentation"""
-        return 'Python' + text.replace('_', ' ')
+        return "Python {}".format(text.replace("_", " "))
 
     flask_app.run('0.0.0.0')
