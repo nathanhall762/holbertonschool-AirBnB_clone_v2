@@ -41,6 +41,6 @@ if __name__ == '__main__':
     @flask_app.route('/number_odd_or_even/<int:n>', strict_slashes=False)
     def even_or_odd(n=None):
         if isinstance(n, int):
-            return render_template("6-number_odd_or_even.html")
+            return render_template("6-number_odd_or_even.html", n=n)
 
     flask_app.run('0.0.0.0')
