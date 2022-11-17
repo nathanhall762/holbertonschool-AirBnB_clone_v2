@@ -1,2 +1,1 @@
-#!/usr/bin/python3/python3
-"""documentation"""
+#!/usr/bin/python3

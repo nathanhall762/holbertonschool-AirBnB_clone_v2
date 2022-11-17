@@ -6,7 +6,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.sql.expression import null
 from sqlalchemy import Column, String, DateTime
 
-#Update BaseModel: (models/base_model.py)
+# Update BaseModel: (models/base_model.py)
 
 Base = declarative_base()
 
