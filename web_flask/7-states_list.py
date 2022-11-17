@@ -14,7 +14,7 @@ def states_list():
     """Display a HTML page of the States
     """
     states = storage.all(State).values()
-    return render_template('7-states_list.html', states=states)
+    return render_template('7-states_list.html', db=storage.all(State))
 
 
 @flask_app.teardown_appcontext
