@@ -40,6 +40,7 @@ if __name__ == '__main__':
 
     @flask_app.route('/number_odd_or_even/<int:n>', strict_slashes=False)
     def even_or_odd(n=None):
+        """documentation"""
         if isinstance(n, int):
             return render_template("6-number_odd_or_even.html", n=n)
 
