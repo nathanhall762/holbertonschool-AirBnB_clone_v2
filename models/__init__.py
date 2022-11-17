@@ -10,6 +10,7 @@ from models.amenity import Amenity
 from models.place import Place
 from models.review import Review
 
+
 # check envirn var to determine storage method
 if environ['HBNB_TYPE_STORAGE'] == 'db':
     from models.engine.db_storage import DBStorage
