@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """documentation"""
 from flask import Flask
+from sys import argv
 
 
 flask_app = Flask(__name__)
@@ -21,7 +22,7 @@ def hbnb():
 @flask_app.route('/c/<text>', strict_slashes=False)
 def c(text):
     """documentation"""
-    return 'C' + text.replace('_', ' ')
+    return "C {}".format(text.replace("_", " "))
 
 
 if __name__ == '__main__':
