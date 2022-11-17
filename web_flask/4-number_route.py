@@ -30,6 +30,6 @@ if __name__ == '__main__':
     @flask_app.route('/number/<int:n>', strict_slashes=False)
     def number(n):
         """documentation"""
-        return str(n) + 'is a number'
+        return str(n) + ' is a number'
 
     flask_app.run('0.0.0.0')
